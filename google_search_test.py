@@ -8,5 +8,5 @@ def test_positive(open_google):
 
 
 def test_negative(open_google):
-    browser.element('[name="q"]').should(be.blank).type('dmnrthjdfopcs').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('dmnrthjdfopcsh').press_enter()
     browser.element('[id="result-stats"]').should(have.text('примерно 0'))
